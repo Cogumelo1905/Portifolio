@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Express - Restaurante</title>
+    <link rel="stylesheet" href="restaurante-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gourmet Express</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Gourmet Express</h1>
+                <p>Experiências gastronômicas únicas em um ambiente acolhedor</p>
+                <a href="#cardapio" class="cta-button">Ver Cardápio</a>
+            </div>
+        </section>
+
+        <section id="cardapio" class="menu">
+            <h2>Nosso Cardápio</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="pratos">Pratos Principais</button>
+                <button class="category-btn" data-category="sobremesas">Sobremesas</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-category="entradas">
+                    <div class="item-image">
+                        <img src="entrada1.jpg" alt="Bruschetta">
+                    </div>
+                    <div class="item-content">
+                        <h3>Bruschetta Italiana</h3>
+                        <p>Pão italiano tostado com tomate, manjericão e azeite de oliva</p>
+                        <span class="price">R$ 24,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="entradas">
+                    <div class="item-image">
+                        <img src="entrada2.jpg" alt="Carpaccio">
+                    </div>
+                    <div class="item-content">
+                        <h3>Carpaccio de Filé</h3>
+                        <p>Finas fatias de filé mignon com rúcula e parmesão</p>
+                        <span class="price">R$ 32,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pratos">
+                    <div class="item-image">
+                        <img src="prato1.jpg" alt="Risoto">
+                    </div>
+                    <div class="item-content">
+                        <h3>Risoto de Cogumelos</h3>
+                        <p>Arroz arbóreo com cogumelos frescos e queijo parmesão</p>
+                        <span class="price">R$ 45,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="pratos">
+                    <div class="item-image">
+                        <img src="prato2.jpg" alt="Filé">
+                    </div>
+                    <div class="item-content">
+                        <h3>Filé Mignon ao Molho Madeira</h3>
+                        <p>Filé mignon grelhado com molho de vinho madeira e batatas rústicas</p>
+                        <span class="price">R$ 68,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="item-image">
+                        <img src="sobremesa1.jpg" alt="Tiramisu">
+                    </div>
+                    <div class="item-content">
+                        <h3>Tiramisu</h3>
+                        <p>Clássico italiano com café, mascarpone e cacau em pó</p>
+                        <span class="price">R$ 22,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="sobremesas">
+                    <div class="item-image">
+                        <img src="sobremesa2.jpg" alt="Cheesecake">
+                    </div>
+                    <div class="item-content">
+                        <h3>Cheesecake de Frutas Vermelhas</h3>
+                        <p>Base de biscoito com creme de queijo e calda de frutas vermelhas</p>
+                        <span class="price">R$ 24,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bebidas">
+                    <div class="item-image">
+                        <img src="bebida1.jpg" alt="Vinho">
+                    </div>
+                    <div class="item-content">
+                        <h3>Vinho Tinto Reserva</h3>
+                        <p>Vinho tinto seco da região do Douro, Portugal</p>
+                        <span class="price">R$ 89,90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="bebidas">
+                    <div class="item-image">
+                        <img src="bebida2.jpg" alt="Cocktail">
+                    </div>
+                    <div class="item-content">
+                        <h3>Mojito Especial</h3>
+                        <p>Rum, hortelã, limão, açúcar e água com gás</p>
+                        <span class="price">R$ 28,90</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="about-content">
+                <h2>Sobre Nós</h2>
+                <p>O Gourmet Express nasceu da paixão por gastronomia e do desejo de oferecer experiências únicas aos nossos clientes. Nossa equipe de chefs trabalha com ingredientes frescos e selecionados para criar pratos que encantam o paladar.</p>
+                <p>Nosso ambiente acolhedor e serviço atencioso completam a experiência gastronômica que oferecemos.</p>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Delícias, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (48) 3333-4444</p>
+                    <p><i class="fas fa-envelope"></i> contato@gourmetexpress.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="opening-hours">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sexta: 11h às 23h</p>
+                    <p>Sábado: 11h às 00h</p>
+                    <p>Domingo: 11h às 22h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gourmet Express. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
